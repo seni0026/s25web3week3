@@ -1,0 +1,216 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+	html,body,div,span,applet,object,iframe,
+	h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+	a,abbr,acronym,address,big,cite,code,
+	del,dfn,em,img,ins,kbd,q,s,samp,
+	small,strike,strong,sub,sup,tt,var,
+	b,u,i,center,
+	dl,dt,dd,ol,ul,li,
+	fieldset,form,label,legend,
+	table,caption,tbody,tfoot,thead,tr,th,td,
+	article,aside,canvas,details,embed,
+	figure,figcaption,footer,header,hgroup,
+	menu,nav,output,ruby,section,summary,
+	time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+	
+	/* HTML5 display-role reset for older browsers */
+	article,aside,details,figcaption,figure,
+	footer,header,hgroup,menu,nav,section{display:block;}
+	body{line-height:1;}
+	ol,ul{list-style:none;}
+	blockquote,q{quotes:none;}
+	blockquote:before,blockquote:after,
+	q:before,q:after{content:'';content:none;}
+	table{border-collapse:collapse;border-spacing:0;}
+
+
+/**************************************************************************************
+			Fonts
+**************************************************************************************/
+
+@font-face {
+    font-family: 'VanillaRegular';
+    src: url('../fonts/Vanilla-webfont.eot');
+    src: url('../fonts/Vanilla-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vanilla-webfont.woff') format('woff'),
+         url('../fonts/Vanilla-webfont.ttf') format('truetype'),
+         url('../fonts/Vanilla-webfont.svg#VanillaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/**************************************************************************************
+			Main
+**************************************************************************************/
+body{
+	background:black url(../images/reef-black.jpg) top center no-repeat;
+	/* background source: http://st.gdefon.ru/wallpapers_original/wallpapers/437013_more_okean_podvodnyj-mir_solnce_dno_2938x1954_%28www.GdeFon.ru%29.jpg */
+	background-size:cover; /*or contain - scales background while maintaining aspect ratio*/
+	color:white;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:18px;
+}
+
+.wrapper{
+	width:960px;
+	margin:0 auto;
+}
+
+header{
+	width:696px;
+	height:120px;
+	margin:10px auto 0;
+	padding:0 10px;
+	background-color:black;
+	border:2px solid white;
+	border-bottom:none;
+	
+	position:relative;
+	z-index:10;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+}
+
+header img{
+	float:left;	
+	padding:20px 10px 0 0;
+}
+
+header h1{
+	font-family: 'VanillaRegular', "Comic Sans MS", sans-serif;
+	font-size:28px;
+	line-height:52px;
+}
+
+main{
+	width:960px;
+	height:400px;
+	margin-top:-2px;
+}
+
+#bottomdweller{
+	position:absolute;
+	left:0;
+	top:3800px;
+	display:none;
+}
+
+
+/**************************************************************************************
+			Structure
+**************************************************************************************/
+#top{	
+	border:2px solid white;
+	border-bottom:none;
+	border-top-right-radius:25px;
+	border-top-left-radius:25px;
+	height:25px;
+	background:black;
+}
+
+#clickers{
+	width:413px;
+	min-height:346px;
+	background:black;
+	padding:25px 0 25px 15px;
+	border:2px solid white;
+	border-top:none;
+	border-bottom-left-radius:25px;
+}
+
+#middle{
+	display:flex;
+	align-items:flex-start;
+}
+
+#adder{
+	display:block;
+	flex-grow:1;
+	border-top:2px solid white;
+	padding:10px;
+	min-height:349px;
+	height:100%;
+	color:black;
+	width:500px;
+}
+
+#right{
+	width:23px;
+	background:black;
+	height:397px;
+	border:2px solid white;
+	border-top:none;
+	border-bottom-right-radius:25px;
+	align-self:stretch;
+}
+
+/**************************************************************************************
+			Clickers
+**************************************************************************************/
+
+form{
+	padding-bottom:20px;
+}
+
+form textarea{
+	width:100%;
+}
+
+form textarea{
+	border-radius:6px;
+	background:#129EE2 url(../images/lighter_water.jpg) center center;
+	/* background source: http://hqwallpapers4free.com/wallpaper/light_water_underwater_desktop_1920x1272_hd-wallpaper-1223155.jpg */
+	padding-left:6px;
+	background-size:cover;
+	font-weight:bold;	
+	margin-bottom:-30px;
+	width:320px;
+}
+
+#buttons h3, form label{
+	clear:both;	
+	font-family: 'VanillaRegular', "Comic Sans MS", sans-serif;	
+	padding:35px 0 5px 0;
+}
+
+#addAt p{
+	padding:10px 0 0 35px;	
+}
+
+#addAt span{
+	display:block;
+	float:left;
+	margin:0 10px;
+	line-height:1.2;
+}
+
+#buttons div{	
+	margin:10px 0 0 20px;
+}
+
+.b:hover, #buttons span:hover{
+	cursor:pointer;
+	color:rgb(60,180,255);
+	
+}
+
+
+/**************************************************************************************
+			List
+**************************************************************************************/
+
+#adder li{
+	font-size:18px;
+	font-weight:bold;
+	margin:5px 0 15px;
+	line-height:22px;	
+}
+
+.bright{
+	color:white;
+}
